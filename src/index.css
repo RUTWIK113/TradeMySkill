@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile-first responsive typography */
+@layer base {
+  html {
+    font-size: 14px;
+  }
+  
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Improved mobile touch targets */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better mobile scrolling */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Responsive text sizing */
+  .text-responsive-xs {
+    font-size: 0.75rem;
+  }
+  
+  .text-responsive-sm {
+    font-size: 0.875rem;
+  }
+  
+  .text-responsive-base {
+    font-size: 1rem;
+  }
+  
+  .text-responsive-lg {
+    font-size: 1.125rem;
+  }
+  
+  .text-responsive-xl {
+    font-size: 1.25rem;
+  }
+  
+  @media (min-width: 768px) {
+    .text-responsive-xs {
+      font-size: 0.875rem;
+    }
+    
+    .text-responsive-sm {
+      font-size: 1rem;
+    }
+    
+    .text-responsive-base {
+      font-size: 1.125rem;
+    }
+    
+    .text-responsive-lg {
+      font-size: 1.25rem;
+    }
+    
+    .text-responsive-xl {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}

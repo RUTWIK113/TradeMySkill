@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trademyskill-one.vercel.app/sitemap.xml
