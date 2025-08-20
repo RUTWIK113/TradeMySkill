@@ -185,14 +185,18 @@ export const Footer: React.FC = () => {
 
             {/* 🛠 Friend Request Button */}
             <div className="mt-4">
-              <motion.button 
-                className="px-4 py-2 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition"
+              <motion.a 
+                href="https://www.linkedin.com/in/rutwik-nakkalla-113me27/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-3 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition inline-block text-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 Send Friend Request
-              </motion.button>
+              </motion.a>
             </div>
+
 
             {/* 🎯 Skill Glimpses */}
             <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-left text-sm">
